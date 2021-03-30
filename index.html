@@ -18,10 +18,18 @@
     type="font/woff2" crossorigin="">
   <link rel="preload" href="https://githubsatellite.com/assets/fonts/alliance-no-2-medium.woff2" as="font"
     type="font/woff2" crossorigin="">
+  <script src="https://kit.fontawesome.com/cfa7126cbf.js" crossorigin="anonymous"></script>
   <link rel="preload" href="assets/index.css" as="style">
+  <link rel="preload" href="assets/style.css" as="style">
   <link rel="preload" href="assets/main.js.download" as="script">
   <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
   <link rel="stylesheet" media="screen" href="assets/index.css">
+  <link rel="stylesheet" media="screen" href="assets/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
 
   <script src="assets/jquery.js.download"></script>
   <link id="favicon" rel="shortcut icon" type="image/ico"
@@ -46,7 +54,7 @@
   </style>
   <style>
     .opc {
-      background: rgba(0, 0, 0, 0.7)
+      background: rgba(0, 0, 0, 0.3)
     }
   </style>
 </head>
@@ -106,54 +114,70 @@
     <section class="hero" id="intro-to-satellite">
       <div class="container hero__inner">
         <br>
-        <h1 class="h1">Introducing,<br> Deqree</h1>
-        <p class="f3 container--thin">India's First Block Chain Based Degree Validation<br>Platform</p>
+        <h1 class="h1" style="color: white;">Introducing,<br> Deqree</h1>
+        <p class="f3 container--thin" style="color: white;">India's First Block Chain Based Degree
+          Validation<br>Platform</p>
         <br>
         <a class="button mt-5" href="assets/White_Paper.pdf" target="_blank">
           <span>White Paper</span>
         </a>
       </div>
     </section>
-    
-    <br>
-    <section class="border-bottom" id="program" 
-      style="background-image: url('assets/home4.jpg');
-             background-attachment: scroll;
-             background-size: cover;
-             background-repeat: no-repeat;">
-      <div class="container my-6 py-6">
-        <p class="h2" style="color: #000; text-align: center ;">The How and Why</p>
-        <br>
-        <div class="opc" style="width: 48%; height: 220px; float: left;">
-          <p style="padding: 35px;">
-            Heading<br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error. Voluptate quisquam, aliquam fuga, tenetur nesciunt consectetur mollitia esse eveniet veniam nostrum laboriosam repellat facilis soluta? Dolor cum rem magnam!
-          </p>
-        </div>
-        <div class="opc" style="margin-left: 52%; height: 220px;">
-          <p style="padding: 35px;">
-            Heading<br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, rerum asperiores itaque consequatur omnis quod iste ipsa facere obcaecati ad optio modi laboriosam aspernatur molestiae! Commodi quam laboriosam repellendus? Aperiam.
-          </p>
-        </div>
-        <br><br>
-        <div class="opc" style="width: 48%; height: 220px; float: left;">
-          <p style="padding: 35px;">
-            Heading<br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error. Voluptate quisquam, aliquam fuga, tenetur nesciunt consectetur mollitia esse eveniet veniam nostrum laboriosam repellat facilis soluta? Dolor cum rem magnam!
-          </p>
-        </div>
-        <div class="opc" style="margin-left: 52%; height: 220px;">
-          <p style="padding: 35px;">
-            Heading<br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, rerum asperiores itaque consequatur omnis quod iste ipsa facere obcaecati ad optio modi laboriosam aspernatur molestiae! Commodi quam laboriosam repellendus? Aperiam.
-          </p>
-        </div>
-      </div>
-      
-    </section>
 
-    <script>localStorage.setItem('satelliteSchedFilter', '');</script>
+    <br>
+
+    <div class="container">
+
+    <section id="why-deqree" class="my-5">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1 class="my-5" style="color: white;">Why Deqree</h1>
+            <ul>
+              <li>
+                <h2 class="my-3" style="color: turquoise;">
+                  The future of asset trading is digital.
+                  We’re ensuring NFTs are traded in an open, decentralized ecosystem,
+                  secured by Ethereum:
+                </h2>
+              </li>
+              <li><i class="fas fa-cube my-3" style="color: white;"></i><span style="color: white;"> &nbsp &nbsp Zero gas fees for peer to peer trading.</span></li>
+              
+
+            </ul>
+          </div>
+          <div class="col-lg-7 image-side">
+            <img src="#" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </section>
+
+      <section id="our-vision" class="my-5">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="#" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 content-part">
+            <h1 class="my-5" style="color: white;">Our Vision & Mission</h1>
+            <ul>
+              <li>
+                <h2 class="my-3" style="color: turquoise;">
+                  The future of asset trading is digital.
+                  We’re ensuring NFTs are traded in an open, decentralized ecosystem,
+                  secured by Ethereum:
+                </h2>
+              </li>
+
+              <li><i class="fas fa-cube my-3" style="color: white;"></i><span style="color: white;"> &nbsp &nbsp Zero gas fees for peer to peer trading.</span></li>
+
+            </ul>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+      <script>localStorage.setItem('satelliteSchedFilter', '');</script>
 
   </main>
 
@@ -161,7 +185,7 @@
     <div class="container-full border-top">
       <div class="container-wide">
         <img width="150px" height="100px" src="assets/banner.png" style="float: left;">
-        <p style="padding-top: 12px; text-align: center;">&copy; Copyright 2021</p>
+        <p style="padding-top: 12px; text-align: center; color: white;">&copy; Copyright 2021</p>
       </div>
     </div>
   </footer>

@@ -1,0 +1,115 @@
+  
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+    color: #2F3A5F;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #4C4C4C;
+    line-height: 2;
+}
+li{
+    list-style-type: none;
+    color: #4C4C4C;
+}
+a{
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+.cover{
+    height: 110vh;
+    background-image: url(images/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+.cover-content{
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.cover-content h1{
+    color: white;
+    margin: 5%;
+    font-size: 500%;
+}
+.cover-content h2{
+    color: white;
+    margin: 5%;
+    line-height: 1.7;
+}
+.navbar{
+  background-color: rgba(0,0,0,0.8);  
+}
+.navbar-brand{
+    margin-left: 5%;
+}
+.navbar-nav{
+    margin-right: 3%;
+   }
+.nav-link{
+    color: white!important;
+    font-size: 1.2rem;
+    
+}
+.btn{
+    margin-left: 5%;
+}
+#why-deqree{
+    background-image: url(images/what_bg-1.png);
+    background-repeat: no-repeat;
+    background-position-x: -23%;
+    background-position-y: 70%;
+    background-size: 30% auto;
+}
+#our-vision{
+    background: transparent;
+}
+
+#our-vision .content-part{
+    background-image: url(images/blog_bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 105%;
+}
+#about-us{
+    background-image: url("images/about-us--background.png");
+    background-repeat: no-repeat;
+    color: black;
+    padding: 3%;
+}
+#about-us h2,p{
+    color: white;
+}
+
+
+/*------  Media Query Section -----------*/
+
+@media only screen and (max-width: 800px) {
+    .cover{
+        background-image: url("images/cover-mobile.png");
+        height: 100vh;
+        
+    }
+    .cover-content{
+        margin-top: 25%;
+        margin-left: 0%;
+    }
+    .cover-content h1{
+        margin: 0%;
+        font-size: 250%;
+    }
+    .cover-content h2{
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-left: 3%;
+    }
+    .image-side{
+        display: none;
+    }
+    #about-us{
+        background-color: black;
+    }
+}
+

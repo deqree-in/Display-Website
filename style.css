@@ -66,6 +66,10 @@ a:link, a:visited {
   a:hover, a:active {
     background-color: white;
   }
+.fab{
+    color: blue;
+     
+}
 #why-deqree{
     background-image: url(images/what_bg-1.png);
     background-repeat: no-repeat;

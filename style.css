@@ -56,6 +56,16 @@ a{
 .btn{
     margin-left: 5%;
 }
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: white;
+  }
 #why-deqree{
     background-image: url(images/what_bg-1.png);
     background-repeat: no-repeat;

@@ -32,6 +32,10 @@ font-size: 70%;
   font-size: 45% !important;
 }
 
+.glow-on-hover{
+margin-right: 210px;
+}
+
   #img{
      height: 50px !important;
     width: 50px !important;
@@ -52,6 +56,78 @@ font-size: 70%;
 }
 
 
+.glow-on-hover  {
+    margin-top: 50px;
+    margin-left: 212px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
   
 </style>
 
@@ -62,12 +138,17 @@ font-size: 70%;
     <img id="img" src="logo_s.png" style="width: 100px; height: 100px; border-radius: 50%;">
   </div>
   <div class="w3-display-topmiddle">
-    <h1 id="h1" style="text-align: center;">Skrypt Pool</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%;">
-    <p id="p1" class="w3-large w3-center" style="color: yellow;">Promoting decentralization and building Cardano based blockchain solutions.</p>
+    <h1 id="h1" style="text-align: center; font-size: xxx-large;">Skrypt Pool</h1>
+    <hr class="w3-border-grey" style="margin:auto; width:40%;">
+    <p id="p1" class="w3-large w3-center" style="color: yellow">Promoting decentralization and building Cardano based blockchain solutions.</p>
+
+    <div>
+      <button class="glow-on-hover" type="button">VIDEO INTRODUCTION</button>
+    </div>
+
   </div>
 
-  <div id="middle-div" class="w3-display-middle" style="background-color: rgba(0, 0, 0, 0.8); padding: 2.5%; margin-top: 5%;">
+  <div id="middle-div" class="w3-display-middle" style="background-color: rgba(0, 0, 0, 0.8); padding: 2%; margin-top: 5%;">
     <p style="font-size: 120%; word-spacing: 80%;">
     We are a brand new stake pool from India created for the purpose of boosting decentralization and supporting our Cardano project that's also a proposal for Catalyst Fund 5. We are looking for delegators to help us sustain and build the Cardano Ecosystem for the long term, especially in India. In India there are unfortunately still next to no stakepools. Our aim is to create a Indian Cardano community and build blockchain solutions for the country.
     We have 0% fees and furthermore, our first block reward will go to a Covid 19 relief fund to do our bit in helping the country deal with this pandemic.
@@ -75,7 +156,7 @@ font-size: 70%;
   </div>
   
   <div class="w3-display-bottommiddle w3-padding-large">
-    <p id="p1" style="color: yellow;">We are unfortunate that we didn't knew about this robust blockchain all these years, hence our pledge is relatively low. We need your support, you can donate us to :
+    <p id="p1" style="color: yellow;">We are unfortunate that we didn't knew about this robust blockchain all these years, hence our pledge is relatively low but if you wanna support us, you can donate us to :
   </p>
   <p id="p3" style="color: azure;"><b><i>addr1q84sftk9afjujjunqwfc97kkh7zpzsenawkq7pf6rmnsx8q78pag6mw3p5ejum0x58cphqy0ew4spezjfcukah8zes4sp3hra2</i></b></p>
     <div style="text-align: center;"><b>
